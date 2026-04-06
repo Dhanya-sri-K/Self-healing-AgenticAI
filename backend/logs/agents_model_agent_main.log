@@ -1,0 +1,1030 @@
+2026-04-06 20:19:04,193 - ModelAgent - INFO - \u2713 Loaded model version 1
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 488, in <module>
+    agent = ModelAgent()
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 64, in __init__
+    self.load_model()
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 91, in load_model
+    logger.info(f"\u2713 Loaded model version {self.model_version}")
+Message: '\u2713 Loaded model version 1'
+Arguments: ()
+2026-04-06 20:19:04,193 - ModelAgent - INFO - \u2713 ModelAgent initialized - ready to consume from 'features' topic
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 488, in <module>
+    agent = ModelAgent()
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 72, in __init__
+    logger.info("\u2713 ModelAgent initialized - ready to consume from 'features' topic")
+Message: "\u2713 ModelAgent initialized - ready to consume from 'features' topic"
+Arguments: ()
+2026-04-06 20:19:04,197 - ModelAgent - INFO - \U0001f4cb Kafka bootstrap servers: 127.0.0.1:29092
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cb' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 488, in <module>
+    agent = ModelAgent()
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 73, in __init__
+    logger.info(f"\U0001f4cb Kafka bootstrap servers: {self.config.kafka.bootstrap_servers}")
+Message: '\U0001f4cb Kafka bootstrap servers: 127.0.0.1:29092'
+Arguments: ()
+2026-04-06 20:19:04,198 - ModelAgent - INFO - \U0001f4cb Database: postgresql://agentic_user:agentic_pass@localhost:5...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cb' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 488, in <module>
+    agent = ModelAgent()
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 74, in __init__
+    logger.info(f"\U0001f4cb Database: {self.config.database.connection_string[:50]}...")
+Message: '\U0001f4cb Database: postgresql://agentic_user:agentic_pass@localhost:5...'
+Arguments: ()
+2026-04-06 20:19:04,199 - ModelAgent - INFO - ============================================================
+2026-04-06 20:19:04,200 - ModelAgent - INFO - \U0001f680 ModelAgent Starting
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 489, in <module>
+    asyncio.run(agent.run())
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 443, in run
+    logger.info("\U0001f680 ModelAgent Starting")
+Message: '\U0001f680 ModelAgent Starting'
+Arguments: ()
+2026-04-06 20:19:04,203 - ModelAgent - INFO - ============================================================
+2026-04-06 20:19:04,203 - ModelAgent - INFO - \U0001f4cb Consumer configuration:
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cb' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 489, in <module>
+    asyncio.run(agent.run())
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 449, in run
+    logger.info("\U0001f4cb Consumer configuration:")
+Message: '\U0001f4cb Consumer configuration:'
+Arguments: ()
+2026-04-06 20:19:04,205 - ModelAgent - INFO -   - Topic: 'features'
+2026-04-06 20:19:04,205 - ModelAgent - INFO -   - Group ID: agentic-platform-v3-model-agent
+2026-04-06 20:19:04,206 - ModelAgent - INFO -   - Bootstrap servers: 127.0.0.1:29092
+2026-04-06 20:19:04,207 - ModelAgent - INFO -   - Mode: ML Model v1
+2026-04-06 20:19:04,207 - ModelAgent - INFO - 
+\U0001f504 Starting consumer in separate thread...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f504' in position 48: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 489, in <module>
+    asyncio.run(agent.run())
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 455, in run
+    logger.info("\n\U0001f504 Starting consumer in separate thread...")
+Message: '\n\U0001f504 Starting consumer in separate thread...'
+Arguments: ()
+2026-04-06 20:19:04,210 - ModelAgent - INFO - \U0001f504 Starting consumer loop...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f504' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 361, in consume_loop
+    logger.info("\U0001f504 Starting consumer loop...")
+Message: '\U0001f504 Starting consumer loop...'
+Arguments: ()
+2026-04-06 20:19:04,326 - ModelAgent - INFO - \u2713 Consumer created successfully
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 378, in consume_loop
+    logger.info("\u2713 Consumer created successfully")
+Message: '\u2713 Consumer created successfully'
+Arguments: ()
+2026-04-06 20:19:04,328 - ModelAgent - INFO -   \u2192 Subscribed to: {'features'}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 48: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 379, in consume_loop
+    logger.info(f"  \u2192 Subscribed to: {consumer.subscription()}")
+Message: "  \u2192 Subscribed to: {'features'}"
+Arguments: ()
+2026-04-06 20:19:04,331 - ModelAgent - INFO -   \u2192 Group ID: agentic-platform-v3-model-agent
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 48: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 380, in consume_loop
+    logger.info(f"  \u2192 Group ID: {consumer.config['group_id']}")
+Message: '  \u2192 Group ID: agentic-platform-v3-model-agent'
+Arguments: ()
+2026-04-06 20:19:04,332 - ModelAgent - INFO -   \u2192 Bootstrap servers: 127.0.0.1:29092
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 48: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 381, in consume_loop
+    logger.info(f"  \u2192 Bootstrap servers: {consumer.config['bootstrap_servers']}")
+Message: '  \u2192 Bootstrap servers: 127.0.0.1:29092'
+Arguments: ()
+2026-04-06 20:19:04,333 - ModelAgent - INFO - \u23f3 Waiting for partition assignment...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 384, in consume_loop
+    logger.info("\u23f3 Waiting for partition assignment...")
+Message: '\u23f3 Waiting for partition assignment...'
+Arguments: ()
+2026-04-06 20:19:07,918 - ModelAgent - INFO - \u2713 Assigned partitions: {TopicPartition(topic='features', partition=0), TopicPartition(topic='features', partition=1), TopicPartition(topic='features', partition=2)}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 389, in consume_loop
+    logger.info(f"\u2713 Assigned partitions: {consumer.assignment()}")
+Message: "\u2713 Assigned partitions: {TopicPartition(topic='features', partition=0), TopicPartition(topic='features', partition=1), TopicPartition(topic='features', partition=2)}"
+Arguments: ()
+2026-04-06 20:19:07,922 - ModelAgent - INFO -   Partition 0: position=0, end=0, lag=0
+2026-04-06 20:19:07,925 - ModelAgent - INFO -   Partition 1: position=0, end=0, lag=0
+2026-04-06 20:19:07,928 - ModelAgent - INFO -   Partition 2: position=0, end=0, lag=0
+2026-04-06 20:19:07,928 - ModelAgent - INFO - \U0001f680 Starting message consumption loop...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 400, in consume_loop
+    logger.info("\U0001f680 Starting message consumption loop...")
+Message: '\U0001f680 Starting message consumption loop...'
+Arguments: ()
+2026-04-06 20:19:07,929 - ModelAgent - INFO - \U0001f442 Listening for messages on 'features' topic...
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f442' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 401, in consume_loop
+    logger.info("\U0001f442 Listening for messages on 'features' topic...")
+Message: "\U0001f442 Listening for messages on 'features' topic..."
+Arguments: ()
+2026-04-06 20:19:18,013 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 10)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 10)'
+Arguments: ()
+2026-04-06 20:19:28,080 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 20)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 20)'
+Arguments: ()
+2026-04-06 20:19:38,157 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 30)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 30)'
+Arguments: ()
+2026-04-06 20:19:48,214 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 40)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 40)'
+Arguments: ()
+2026-04-06 20:19:58,306 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 50)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 50)'
+Arguments: ()
+2026-04-06 20:20:08,380 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 60)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 60)'
+Arguments: ()
+2026-04-06 20:20:18,482 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 70)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 70)'
+Arguments: ()
+2026-04-06 20:20:28,547 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 80)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 80)'
+Arguments: ()
+2026-04-06 20:20:38,602 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 90)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 90)'
+Arguments: ()
+2026-04-06 20:20:48,668 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 100)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 100)'
+Arguments: ()
+2026-04-06 20:20:58,720 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 110)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 110)'
+Arguments: ()
+2026-04-06 20:21:08,776 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 120)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 120)'
+Arguments: ()
+2026-04-06 20:21:18,838 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 130)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 130)'
+Arguments: ()
+2026-04-06 20:21:28,928 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 140)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 140)'
+Arguments: ()
+2026-04-06 20:21:39,003 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 150)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 150)'
+Arguments: ()
+2026-04-06 20:21:49,066 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 160)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 160)'
+Arguments: ()
+2026-04-06 20:21:59,137 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 170)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 170)'
+Arguments: ()
+2026-04-06 20:22:09,234 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 180)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 180)'
+Arguments: ()
+2026-04-06 20:22:19,312 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 190)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 190)'
+Arguments: ()
+2026-04-06 20:22:29,396 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 200)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 200)'
+Arguments: ()
+2026-04-06 20:22:39,458 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 210)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 210)'
+Arguments: ()
+2026-04-06 20:22:49,558 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 220)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 220)'
+Arguments: ()
+2026-04-06 20:22:59,640 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 230)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 230)'
+Arguments: ()
+2026-04-06 20:23:09,704 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 240)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 240)'
+Arguments: ()
+2026-04-06 20:23:19,771 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 250)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 250)'
+Arguments: ()
+2026-04-06 20:23:29,825 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 260)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 260)'
+Arguments: ()
+2026-04-06 20:23:39,902 - ModelAgent - INFO - \u23f3 Still waiting for messages... (polls: 270)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1113, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 46: character maps to <undefined>
+Call stack:
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83, in _worker
+    work_item.run()
+  File "C:\Users\DhanyaSri\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\DhanyaSri\Downloads\agentic-self-healing-ai-platform-main\agents\model_agent\main.py", line 417, in consume_loop
+    logger.info(f"\u23f3 Still waiting for messages... (polls: {poll_count})")
+Message: '\u23f3 Still waiting for messages... (polls: 270)'
+Arguments: ()

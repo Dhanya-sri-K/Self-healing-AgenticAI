@@ -1,34 +1,59 @@
-2026-02-04 15:37:09,120 - ModelAgent - WARNING - ⚠ No model found in MLflow, using rule-based mode
-2026-02-04 15:37:09,123 - ModelAgent - INFO - ✓ ModelAgent initialized - ready to consume from 'features' topic
-2026-02-04 15:37:09,124 - ModelAgent - INFO - 📋 Kafka bootstrap servers: 127.0.0.1:29092
-2026-02-04 15:37:09,127 - ModelAgent - INFO - 📋 Database: postgresql://agentic_user:agentic_pass@localhost:5...
-2026-02-04 15:37:09,129 - ModelAgent - INFO - ============================================================
-2026-02-04 15:37:09,129 - ModelAgent - INFO - 🚀 ModelAgent Starting
-2026-02-04 15:37:09,130 - ModelAgent - INFO - ============================================================
-2026-02-04 15:37:09,130 - ModelAgent - INFO - 📋 Consumer configuration:
-2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Topic: 'features'
-2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Group ID: agentic-platform-v3-model-agent
-2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Bootstrap servers: 127.0.0.1:29092
-2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Mode: SAFE_MODE (rules)
-2026-02-04 15:37:09,130 - ModelAgent - INFO - 
+2026-04-06 20:35:29,074 - ModelAgent - INFO - ✓ Loaded model version 1
+2026-04-06 20:35:29,077 - ModelAgent - INFO - ✓ ModelAgent initialized - ready to consume from 'features' topic
+2026-04-06 20:35:29,078 - ModelAgent - INFO - 📋 Kafka bootstrap servers: 127.0.0.1:29092
+2026-04-06 20:35:29,079 - ModelAgent - INFO - 📋 Database: postgresql://agentic_user:agentic_pass@localhost:5...
+2026-04-06 20:35:29,083 - ModelAgent - INFO - ============================================================
+2026-04-06 20:35:29,084 - ModelAgent - INFO - 🚀 ModelAgent Starting
+2026-04-06 20:35:29,088 - ModelAgent - INFO - ============================================================
+2026-04-06 20:35:29,089 - ModelAgent - INFO - 📋 Consumer configuration:
+2026-04-06 20:35:29,090 - ModelAgent - INFO -   - Topic: 'features'
+2026-04-06 20:35:29,091 - ModelAgent - INFO -   - Group ID: agentic-platform-v3-model-agent
+2026-04-06 20:35:29,092 - ModelAgent - INFO -   - Bootstrap servers: 127.0.0.1:29092
+2026-04-06 20:35:29,093 - ModelAgent - INFO -   - Mode: ML Model v1
+2026-04-06 20:35:29,093 - ModelAgent - INFO - 
 🔄 Starting consumer in separate thread...
-2026-02-04 15:37:09,132 - ModelAgent - INFO - 🔄 Starting consumer loop...
-2026-02-04 15:37:09,158 - ModelAgent - INFO - ✓ Consumer created successfully
-2026-02-04 15:37:09,160 - ModelAgent - INFO -   → Subscribed to: {'features'}
-2026-02-04 15:37:09,161 - ModelAgent - INFO -   → Group ID: agentic-platform-v3-model-agent
-2026-02-04 15:37:09,161 - ModelAgent - INFO -   → Bootstrap servers: 127.0.0.1:29092
-2026-02-04 15:37:09,161 - ModelAgent - INFO - ⏳ Waiting for partition assignment...
-2026-02-04 15:38:45,801 - ModelAgent - INFO - Shutdown signal received...
-2026-02-04 15:38:46,200 - ModelAgent - INFO - ✓ Assigned partitions: set()
-2026-02-04 15:38:46,209 - ModelAgent - INFO - 🚀 Starting message consumption loop...
-2026-02-04 15:38:46,210 - ModelAgent - INFO - 👂 Listening for messages on 'features' topic...
-2026-02-04 15:38:46,210 - ModelAgent - INFO - 🛑 Consumer loop stopped2026-02-04 17:56:38,673 - ModelAgent - INFO - Shutdown signal received...
-2026-02-04 17:56:39,818 - ModelAgent - INFO - ✓ Assigned partitions: set()
-2026-02-04 17:56:39,823 - ModelAgent - INFO - 🚀 Starting message consumption loop...
-2026-02-04 17:56:39,830 - ModelAgent - INFO - 👂 Listening for messages on 'features' topic...
-2026-02-04 17:56:39,834 - ModelAgent - INFO - 🛑 Consumer loop stopped
-2026-02-04 17:56:39,850 - ModelAgent - INFO - ✓ Consumer closed
-Total predictions: 0
-2026-02-04 15:38:48,564 - ModelAgent - INFO -   - Last latency: 0.00ms
-2026-02-04 15:38:48,565 - ModelAgent - INFO - 
-✅ Shutdown complete
+2026-04-06 20:35:29,096 - ModelAgent - INFO - 🔄 Starting consumer loop...
+2026-04-06 20:35:29,221 - ModelAgent - INFO - ✓ Consumer created successfully
+2026-04-06 20:35:29,222 - ModelAgent - INFO -   → Subscribed to: {'features'}
+2026-04-06 20:35:29,223 - ModelAgent - INFO -   → Group ID: agentic-platform-v3-model-agent
+2026-04-06 20:35:29,225 - ModelAgent - INFO -   → Bootstrap servers: 127.0.0.1:29092
+2026-04-06 20:35:29,225 - ModelAgent - INFO - ⏳ Waiting for partition assignment...
+2026-04-06 20:35:52,185 - ModelAgent - INFO - ✓ Assigned partitions: {TopicPartition(topic='features', partition=0), TopicPartition(topic='features', partition=1), TopicPartition(topic='features', partition=2)}
+2026-04-06 20:35:52,186 - ModelAgent - INFO -   Partition 0: position=0, end=0, lag=0
+2026-04-06 20:35:52,189 - ModelAgent - INFO -   Partition 1: position=0, end=0, lag=0
+2026-04-06 20:35:52,190 - ModelAgent - INFO -   Partition 2: position=0, end=0, lag=0
+2026-04-06 20:35:52,191 - ModelAgent - INFO - 🚀 Starting message consumption loop...
+2026-04-06 20:35:52,192 - ModelAgent - INFO - 👂 Listening for messages on 'features' topic...
+2026-04-06 20:36:02,269 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 10)
+2026-04-06 20:36:12,337 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 20)
+2026-04-06 20:36:22,403 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 30)
+2026-04-06 20:36:32,478 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 40)
+2026-04-06 20:36:42,554 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 50)
+2026-04-06 20:36:52,642 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 60)
+2026-04-06 20:37:02,705 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 70)
+2026-04-06 20:37:12,787 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 80)
+2026-04-06 20:37:22,845 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 90)
+2026-04-06 20:37:32,935 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 100)
+2026-04-06 20:37:43,012 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 110)
+2026-04-06 20:37:53,072 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 120)
+2026-04-06 20:38:03,146 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 130)
+2026-04-06 20:38:13,223 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 140)
+2026-04-06 20:38:23,285 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 150)
+2026-04-06 20:38:33,369 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 160)
+2026-04-06 20:38:43,449 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 170)
+2026-04-06 20:38:53,524 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 180)
+2026-04-06 20:39:03,612 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 190)
+2026-04-06 20:39:13,666 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 200)
+2026-04-06 20:39:23,752 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 210)
+2026-04-06 20:39:33,808 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 220)
+2026-04-06 20:39:43,862 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 230)
+2026-04-06 20:39:53,909 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 240)
+2026-04-06 20:40:03,995 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 250)
+2026-04-06 20:40:14,086 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 260)
+2026-04-06 20:40:24,143 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 270)
+2026-04-06 20:40:34,246 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 280)
+2026-04-06 20:40:44,323 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 290)
+2026-04-06 20:40:54,411 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 300)
+2026-04-06 20:41:04,481 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 310)
+2026-04-06 20:41:14,586 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 320)
+2026-04-06 20:41:24,680 - ModelAgent - INFO - ⏳ Still waiting for messages... (polls: 330)

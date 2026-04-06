@@ -41,15 +41,28 @@ A mesh of 6 autonomous agents:
 ## 🚀 Getting Started
 
 1.  **Start Infrastructure**:
+    Ensure Docker Desktop is running, then start the core services:
     ```bash
-    docker-compose up -d
+    docker-compose -f infra/docker-compose.yml up -d
     ```
+
 2.  **Start Frontend**:
+    Install dependencies (if first time) and launch the dashboard:
     ```bash
-    bun dev
+    npm install
+    npm run dev
     ```
-3.  **Run Agents**:
+    Access the UI at [http://localhost:3000](http://localhost:3000).
+
+3.  **Run Autonomous Agents**:
+    Launch the AI agent suite using the Windows batch script:
     ```bash
-    bash run_all_agents.sh
+    .\run_all_agents.bat
+    ```
+
+4.  **Verify Database**:
+    Check the status of incidents and healing actions:
+    ```bash
+    .\venv\Scripts\python verify_db_v2.py
     ```
 

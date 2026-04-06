@@ -261,14 +261,15 @@ class DatabaseManager:
         finally:
             session.close()
 
-    def update_incident_status(
+    def update_incident(
         self,
         incident_id: str,
         status: Any,
         resolved_at: Optional[datetime] = None,
-        mttr_seconds: Optional[float] = None
+        mttr_seconds: Optional[float] = None,
+        resolution_action: Optional[str] = None
     ):
-        """Update incident status"""
+        """Update incident status and resolution details"""
         session = self.get_session()
         try:
             status_enum = self._to_enum(status, IncidentStatus)
@@ -276,6 +277,9 @@ class DatabaseManager:
             incident = session.query(Incident).filter_by(incident_id=incident_id).first()
             if incident:
                 incident.status = status_enum
+                if resolution_action:
+                    incident.description = f"{incident.description}\nResolution: {resolution_action}" if incident.description else f"Resolution: {resolution_action}"
+                
                 if resolved_at:
                     incident.resolved_at = resolved_at
                 elif status_enum == IncidentStatus.RESOLVED:
@@ -305,12 +309,18 @@ class DatabaseManager:
         self,
         incident_id: str = None,
         action_type: str = "UNKNOWN",
-        action_details: Dict[str, Any] = None,
-        agl_decision: Any = "PENDING",
+        status: str = "PENDING",
+        details: Dict[str, Any] = None,
+        target: str = "unknown",
         *args,
         **kwargs
     ):
         """Log a healing action taken by an agent."""
+        print(f"DEBUG DB: log_healing_action called for {incident_id}")
+        # Handle the case where 'action_details' is passed instead of 'details'
+        actual_details = details or kwargs.get('action_details') or kwargs.get('details')
+        actual_agl_decision = kwargs.get('agl_decision')
+        
         session = self.get_session()
         try:
             actual_incident_id = incident_id or kwargs.get('incident_id')
@@ -318,28 +328,31 @@ class DatabaseManager:
                 actual_incident_id = args[0]
                 
             if not actual_incident_id:
+                print("DEBUG DB: Cannot log healing action without incident_id")
                 logger.error("Cannot log healing action without incident_id")
                 return
 
-            decision_enum = self._to_enum(agl_decision or kwargs.get('agl_decision'), AGLDecision)
+            decision_enum = self._to_enum(actual_agl_decision or status, AGLDecision)
             
             # Sanitize action details
-            sanitized_details = sanitize_json(action_details or {})
+            sanitized_details = sanitize_json(actual_details or {})
 
             action = HealingAction(
                 action_id=f"ACT-{uuid.uuid4().hex[:8].upper()}",
                 incident_id=actual_incident_id,
-                proposed_action={"type": action_type, "details": sanitized_details},
+                proposed_action={"type": action_type, "details": sanitized_details, "target": target},
                 agl_decision=decision_enum,
-                approved_action={"type": action_type, "details": sanitized_details} if decision_enum == AGLDecision.APPROVED else None,
+                approved_action={"type": action_type, "details": sanitized_details, "target": target} if decision_enum == AGLDecision.APPROVED else None,
                 executed_at=dt.datetime.now(dt.timezone.utc) if decision_enum == AGLDecision.APPROVED else None,
-                result=ActionResult.SUCCESS if decision_enum == AGLDecision.APPROVED else None,
-                reasoning=f"Decision {decision_enum.value if hasattr(decision_enum, 'value') else decision_enum} by AGL"
+                result=ActionResult.SUCCESS if decision_enum == AGLDecision.APPROVED or status == "SUCCESS" else None,
+                reasoning=f"Status: {status}, Target: {target}"
             )
             session.add(action)
             session.commit()
-            logger.info(f"Logged healing action for incident {actual_incident_id}: {decision_enum}")
+            print(f"DEBUG DB: Successfully logged healing action for {actual_incident_id}")
+            logger.info(f"Logged healing action for incident {actual_incident_id}: {decision_enum} (Target: {target})")
         except Exception as e:
+            print(f"DEBUG DB: FAILED to log healing action: {e}")
             if session:
                 session.rollback()
             logger.error(f"Failed to log healing action: {e}")
@@ -654,150 +667,4 @@ class DatabaseManager:
             logger.error(f"Failed to store config update: {e}")
         finally:
             session.close()
-    """
-Add these methods to your DatabaseManager class in backend/database/db_manager.py
-"""
-
-    def log_healing_action(self, incident_id: int, action_type: str, target: str, 
-                        status: str, details: dict = None):
-        """
-        Log a healing action execution to the database
-        
-        Args:
-            incident_id: ID of the incident being healed
-            action_type: Type of action (RESTART_AGENT, ROLLBACK_MODEL, etc.)
-            target: Target of the action (agent name, model ID, etc.)
-            status: Execution status (SUCCESS, FAILED, DENIED)
-            details: Additional details about the action
-        """
-        query = """
-            INSERT INTO healing_actions 
-            (incident_id, action_type, target, status, details, executed_at)
-            VALUES (%s, %s, %s, %s, %s, NOW())
-            RETURNING id
-        """
-        
-        try:
-            with self.get_connection() as conn:
-                with conn.cursor() as cursor:
-                    cursor.execute(query, (
-                        incident_id,
-                        action_type,
-                        target,
-                        status,
-                        json.dumps(details) if details else None
-                    ))
-                    action_id = cursor.fetchone()[0]
-                    conn.commit()
-                    
-                    logger.info(f"Logged healing action {action_id}: {action_type} for incident {incident_id}")
-                    return action_id
-                    
-        except Exception as e:
-            logger.error(f"Error logging healing action: {e}")
-            raise
-
-
-    def get_healing_actions(self, incident_id: int = None, limit: int = 100):
-        """
-        Retrieve healing actions, optionally filtered by incident
-        
-        Args:
-            incident_id: Optional incident ID to filter by
-            limit: Maximum number of records to return
-        
-        Returns:
-            List of healing action records
-        """
-        if incident_id:
-            query = """
-                SELECT id, incident_id, action_type, target, status, details, executed_at
-                FROM healing_actions
-                WHERE incident_id = %s
-                ORDER BY executed_at DESC
-                LIMIT %s
-            """
-            params = (incident_id, limit)
-        else:
-            query = """
-                SELECT id, incident_id, action_type, target, status, details, executed_at
-                FROM healing_actions
-                ORDER BY executed_at DESC
-                LIMIT %s
-            """
-            params = (limit,)
-        
-        try:
-            with self.get_connection() as conn:
-                with conn.cursor() as cursor:
-                    cursor.execute(query, params)
-                    rows = cursor.fetchall()
-                    
-                    actions = []
-                    for row in rows:
-                        actions.append({
-                            'id': row[0],
-                            'incident_id': row[1],
-                            'action_type': row[2],
-                            'target': row[3],
-                            'status': row[4],
-                            'details': json.loads(row[5]) if row[5] else None,
-                            'executed_at': row[6].isoformat() if row[6] else None
-                        })
-                    
-                    return actions
-                    
-        except Exception as e:
-            logger.error(f"Error retrieving healing actions: {e}")
-            return []
-
-
-    def update_incident(self, incident_id: int, status: IncidentStatus = None, 
-                    resolution_action: str = None, resolved_at = None):
-        """
-        Update an incident's status and resolution details
-        
-        Args:
-            incident_id: ID of the incident to update
-            status: New status (optional)
-            resolution_action: Action taken to resolve (optional)
-            resolved_at: Timestamp of resolution (optional)
-        """
-        updates = []
-        params = []
-        
-        if status:
-            updates.append("status = %s")
-            params.append(status.value if isinstance(status, IncidentStatus) else status)
-        
-        if resolution_action:
-            updates.append("resolution_action = %s")
-            params.append(resolution_action)
-        
-        if resolved_at:
-            updates.append("resolved_at = %s")
-            params.append(resolved_at)
-        
-        if not updates:
-            logger.warning("No updates provided for incident")
-            return
-        
-        params.append(incident_id)
-        query = f"""
-            UPDATE incidents
-            SET {', '.join(updates)}, updated_at = NOW()
-            WHERE id = %s
-        """
-        
-        try:
-            with self.get_connection() as conn:
-                with conn.cursor() as cursor:
-                    cursor.execute(query, tuple(params))
-                    conn.commit()
-                    
-                    logger.info(f"Updated incident {incident_id}: {', '.join(updates)}")
-                    
-        except Exception as e:
-            logger.error(f"Error updating incident: {e}")
-            raise
 

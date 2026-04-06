@@ -60,7 +60,7 @@ class ModelAgent:
         
         # Load model
         self.mlflow_uri = self.config.mlflow.tracking_uri
-        mlflow.set_tracking_uri("http://localhost:5020")
+        mlflow.set_tracking_uri("http://localhost:5001")
         self.load_model()
         
         # Signal handling (only in main thread)

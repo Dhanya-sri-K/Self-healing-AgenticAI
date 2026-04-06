@@ -49,20 +49,25 @@ def setup_logger(name: str, kafka_config: Optional[KafkaConfig] = None):
     if logger.hasHandlers():
         logger.handlers.clear()
     
-    # Console Handler
-    console_handler = logging.StreamHandler()
+    # Console Handler (use utf-8 for stability on Windows)
+    import sys
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setStream(sys.stdout) # Ensure we use stdout
+    # Note: StreamHandler doesn't take encoding directly, but we can set it via the stream
+    # or just rely on the file handler for the full logs.
+    # Actually, for Windows console, it's safer to use 'replace' error handler.
+    
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
     
-    # File Handler (Reset on startup)
+    # File Handler (Reset on startup, use utf-8)
     log_dir = os.path.join(os.path.dirname(__file__), '../backend/logs')
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
     
     log_file = os.path.join(log_dir, f"{name.lower()}.log")
-    # Open in 'w' mode to clear old logs as requested
-    file_handler = logging.FileHandler(log_file, mode='w')
+    file_handler = logging.FileHandler(log_file, mode='w', encoding='utf-8')
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
     

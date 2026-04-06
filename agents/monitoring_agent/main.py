@@ -65,7 +65,7 @@ class MonitoringAgent:
         self.heartbeats = {}
         
         # FIXED THRESHOLDS - Much lower for testing
-        self.latency_threshold_ms = 10  # 10ms instead of 50ms - easier to trigger
+        self.latency_threshold_ms = 15  # 15ms instead of 10ms - more stable
         self.accuracy_threshold = 0.90  # 90% instead of 99% - more realistic
         self.heartbeat_timeout_sec = 15  # 15s instead of 30s - faster detection
         self.drift_threshold = 0.15  # 15% instead of 1% - easier to detect
@@ -79,7 +79,7 @@ class MonitoringAgent:
         
         # TESTING MODE - Generate synthetic spikes
         self.test_mode = True  # Set to False to disable testing
-        self.spike_interval = 30  # Generate spike every 30 seconds
+        self.spike_interval = 60  # Generate spike every 60 seconds
         self.last_spike_time = time.time()
         
         # Signal handling (only in main thread)
@@ -122,7 +122,7 @@ class MonitoringAgent:
     # Only suppress a repeat alert for this many seconds after the last one.
     # After this window any stale open incident is closed and a fresh alert
     # is allowed through.
-    INCIDENT_COOLDOWN_SECONDS = 60
+    INCIDENT_COOLDOWN_SECONDS = 120
 
     def _should_create_incident(self, incident_type, key=None, value=None):
         """

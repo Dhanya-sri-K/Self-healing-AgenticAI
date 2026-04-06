@@ -23,7 +23,7 @@ class DatabaseConfig:
 
 @dataclass
 class MLflowConfig:
-    tracking_uri: str = os.getenv("MLFLOW_TRACKING_URI", "http://localhost:5020")
+    tracking_uri: str = os.getenv("MLFLOW_TRACKING_URI", "http://localhost:5001")
     experiment_name: str = "agentic-ai-models"
     model_registry_name: str = "production-model"
 

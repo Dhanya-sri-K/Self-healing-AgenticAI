@@ -1,45 +1,64 @@
-2026-02-04 15:37:07,124 - DecisionAgent - INFO - ======================================================================
-2026-02-04 15:37:07,406 - DecisionAgent - INFO - ✓ DecisionAgent initialized - ready to consume from 'predictions' topic
-2026-02-04 15:37:07,407 - DecisionAgent - INFO - 📋 Kafka bootstrap servers: 127.0.0.1:29092
-2026-02-04 15:37:07,408 - DecisionAgent - INFO - 📋 Database: postgresql://agentic_user:agentic_pass@localhost:5...
-2026-02-04 15:37:07,408 - DecisionAgent - INFO - ======================================================================
-2026-02-04 15:37:07,415 - DecisionAgent - INFO - 
-2026-02-04 15:37:07,416 - DecisionAgent - INFO - ======================================================================
-2026-02-04 15:37:07,416 - DecisionAgent - INFO - 🚀 DecisionAgent Starting
-2026-02-04 15:37:07,416 - DecisionAgent - INFO - ======================================================================
-2026-02-04 15:37:07,417 - DecisionAgent - INFO - 📋 Consumer configuration:
-2026-02-04 15:37:07,417 - DecisionAgent - INFO -   - Topic: 'predictions'
-2026-02-04 15:37:07,417 - DecisionAgent - INFO -   - Group ID: agentic-platform-v3-decision-agent
-2026-02-04 15:37:07,418 - DecisionAgent - INFO -   - Bootstrap servers: 127.0.0.1:29092
-2026-02-04 15:37:07,418 - DecisionAgent - INFO -   - Processing: Predictions → Decisions
-2026-02-04 15:37:07,418 - DecisionAgent - INFO - 
+2026-04-06 20:35:26,605 - DecisionAgent - INFO - ======================================================================
+2026-04-06 20:35:26,608 - DecisionAgent - INFO - ✓ DecisionAgent initialized - ready to consume from 'predictions' topic
+2026-04-06 20:35:26,611 - DecisionAgent - INFO - 📋 Kafka bootstrap servers: 127.0.0.1:29092
+2026-04-06 20:35:26,613 - DecisionAgent - INFO - 📋 Database: postgresql://agentic_user:agentic_pass@localhost:5...
+2026-04-06 20:35:26,615 - DecisionAgent - INFO - ======================================================================
+2026-04-06 20:35:26,616 - DecisionAgent - INFO - 
+2026-04-06 20:35:26,617 - DecisionAgent - INFO - ======================================================================
+2026-04-06 20:35:26,618 - DecisionAgent - INFO - 🚀 DecisionAgent Starting
+2026-04-06 20:35:26,621 - DecisionAgent - INFO - ======================================================================
+2026-04-06 20:35:26,621 - DecisionAgent - INFO - 📋 Consumer configuration:
+2026-04-06 20:35:26,624 - DecisionAgent - INFO -   - Topic: 'predictions'
+2026-04-06 20:35:26,624 - DecisionAgent - INFO -   - Group ID: agentic-platform-v3-decision-agent
+2026-04-06 20:35:26,624 - DecisionAgent - INFO -   - Bootstrap servers: 127.0.0.1:29092
+2026-04-06 20:35:26,625 - DecisionAgent - INFO -   - Processing: Predictions → Decisions
+2026-04-06 20:35:26,627 - DecisionAgent - INFO - 
 🔄 Starting consumer in separate thread...
-2026-02-04 15:37:07,427 - DecisionAgent - INFO - 🔄 Starting consumer loop...
-2026-02-04 15:37:07,451 - DecisionAgent - INFO - ✓ Consumer created successfully
-2026-02-04 15:37:07,451 - DecisionAgent - INFO -   → Subscribed to: {'predictions'}
-2026-02-04 15:37:07,452 - DecisionAgent - INFO -   → Group ID: agentic-platform-v3-decision-agent
-2026-02-04 15:37:07,452 - DecisionAgent - INFO -   → Bootstrap servers: 127.0.0.1:29092
-2026-02-04 15:37:07,452 - DecisionAgent - INFO - ⏳ Waiting for partition assignment...
-2026-02-04 15:37:11,874 - DecisionAgent - INFO - ✓ Assigned partitions: {TopicPartition(topic='predictions', partition=0)}
-2026-02-04 15:38:45,809 - DecisionAgent - INFO - Shutdown signal received...
-2026-02-04 15:42:11,877 - DecisionAgent - INFO -   Partition 0: position=100927, end=464825, lag=363898
-2026-02-04 15:42:11,912 - DecisionAgent - INFO - 
-2026-02-04 15:42:11,914 - DecisionAgent - INFO - 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
-2026-02-04 15:42:11,915 - DecisionAgent - INFO - 🚀 DecisionAgent READY - Listening for predictions...
-2026-02-04 15:42:11,918 - DecisionAgent - INFO - 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
-2026-02-04 15:42:11,919 - DecisionAgent - INFO - 
-2026-02-04 15:42:11,920 - DecisionAgent - INFO - 🛑 Consumer loop stopped
-2026-02-04 15:42:11,983 - DecisionAgent - INFO - ✓ Consumer closed
-2026-02-04 15:42:12,001 - DecisionAgent - INFO - 
-2026-02-04 15:42:12,002 - DecisionAgent - INFO - 🧹 Cleaning up resources...
-2026-02-04 15:42:12,002 - DecisionAgent - INFO -   Flushing producer...
-2026-02-04 15:42:12,002 - DecisionAgent - ERROR -   Error closing producer: KafkaProducerWrapper.flush() got an unexpected keyword argument 'timeout'
-2026-02-04 15:42:12,003 - DecisionAgent - INFO - 
-2026-02-04 15:42:12,003 - DecisionAgent - INFO - 📊 Final Statistics:
-2026-02-04 15:42:12,004 - DecisionAgent - INFO - ======================================================================
-2026-02-04 15:42:12,004 - DecisionAgent - INFO -   Total Decisions:  0
-2026-02-04 15:42:12,005 - DecisionAgent - INFO -   Last Latency:     0.00ms
-2026-02-04 15:42:12,005 - DecisionAgent - INFO - ======================================================================
-2026-02-04 15:42:12,005 - DecisionAgent - INFO - 
-2026-02-04 15:42:12,005 - DecisionAgent - INFO - ✅ DecisionAgent shutdown complete
-2026-02-04 15:42:12,006 - DecisionAgent - INFO - 
+2026-04-06 20:35:26,632 - DecisionAgent - INFO - 🔄 Starting consumer loop...
+2026-04-06 20:35:26,746 - DecisionAgent - INFO - ✓ Consumer created successfully
+2026-04-06 20:35:26,747 - DecisionAgent - INFO -   → Subscribed to: {'predictions'}
+2026-04-06 20:35:26,748 - DecisionAgent - INFO -   → Group ID: agentic-platform-v3-decision-agent
+2026-04-06 20:35:26,750 - DecisionAgent - INFO -   → Bootstrap servers: 127.0.0.1:29092
+2026-04-06 20:35:26,752 - DecisionAgent - INFO - ⏳ Waiting for partition assignment...
+2026-04-06 20:35:51,978 - DecisionAgent - INFO - ✓ Assigned partitions: {TopicPartition(topic='predictions', partition=0), TopicPartition(topic='predictions', partition=1), TopicPartition(topic='predictions', partition=2)}
+2026-04-06 20:35:51,982 - DecisionAgent - INFO -   Partition 0: position=0, end=0, lag=0
+2026-04-06 20:35:51,984 - DecisionAgent - INFO -   Partition 1: position=0, end=0, lag=0
+2026-04-06 20:35:51,986 - DecisionAgent - INFO -   Partition 2: position=0, end=0, lag=0
+2026-04-06 20:35:51,987 - DecisionAgent - INFO - 
+2026-04-06 20:35:51,987 - DecisionAgent - INFO - 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+2026-04-06 20:35:51,988 - DecisionAgent - INFO - 🚀 DecisionAgent READY - Listening for predictions...
+2026-04-06 20:35:51,988 - DecisionAgent - INFO - 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 🚀 
+2026-04-06 20:35:51,989 - DecisionAgent - INFO - 
+2026-04-06 20:36:02,063 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 10)
+2026-04-06 20:36:12,130 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 20)
+2026-04-06 20:36:22,200 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 30)
+2026-04-06 20:36:32,274 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 40)
+2026-04-06 20:36:42,367 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 50)
+2026-04-06 20:36:52,451 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 60)
+2026-04-06 20:37:02,538 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 70)
+2026-04-06 20:37:12,608 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 80)
+2026-04-06 20:37:22,662 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 90)
+2026-04-06 20:37:32,763 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 100)
+2026-04-06 20:37:42,809 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 110)
+2026-04-06 20:37:52,914 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 120)
+2026-04-06 20:38:02,975 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 130)
+2026-04-06 20:38:13,038 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 140)
+2026-04-06 20:38:23,124 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 150)
+2026-04-06 20:38:33,195 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 160)
+2026-04-06 20:38:43,271 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 170)
+2026-04-06 20:38:53,345 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 180)
+2026-04-06 20:39:03,417 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 190)
+2026-04-06 20:39:13,471 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 200)
+2026-04-06 20:39:23,544 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 210)
+2026-04-06 20:39:33,610 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 220)
+2026-04-06 20:39:43,660 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 230)
+2026-04-06 20:39:53,729 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 240)
+2026-04-06 20:40:03,853 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 250)
+2026-04-06 20:40:13,943 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 260)
+2026-04-06 20:40:24,024 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 270)
+2026-04-06 20:40:34,091 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 280)
+2026-04-06 20:40:44,151 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 290)
+2026-04-06 20:40:54,220 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 300)
+2026-04-06 20:41:04,309 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 310)
+2026-04-06 20:41:14,365 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 320)
+2026-04-06 20:41:24,438 - DecisionAgent - INFO - ⏳ Waiting for predictions... (polls: 330)
