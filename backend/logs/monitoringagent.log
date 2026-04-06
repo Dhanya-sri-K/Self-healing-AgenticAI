@@ -1,0 +1,85 @@
+2026-02-04 15:37:09,947 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:09,952 - MonitoringAgent - INFO - ✓ MonitoringAgent initialized
+2026-02-04 15:37:09,952 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:09,952 - MonitoringAgent - INFO - TEST MODE: ENABLED
+2026-02-04 15:37:09,953 - MonitoringAgent - INFO - Latency Threshold: 10ms
+2026-02-04 15:37:09,953 - MonitoringAgent - INFO - Accuracy Threshold: 90.0%
+2026-02-04 15:37:09,953 - MonitoringAgent - INFO - Heartbeat Timeout: 15s
+2026-02-04 15:37:09,953 - MonitoringAgent - INFO - Drift Threshold: 15.0%
+2026-02-04 15:37:09,953 - MonitoringAgent - INFO - Spike Interval: 30s
+2026-02-04 15:37:09,953 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:09,955 - MonitoringAgent - WARNING - 🔧 Creating metrics_consumer...
+2026-02-04 15:37:09,984 - MonitoringAgent - WARNING - ✓ metrics_consumer created
+2026-02-04 15:37:09,985 - MonitoringAgent - WARNING - 🔧 Creating decisions_consumer...
+2026-02-04 15:37:10,004 - MonitoringAgent - WARNING - ✓ decisions_consumer created
+2026-02-04 15:37:10,005 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:10,005 - MonitoringAgent - INFO - 🚀 MonitoringAgent starting consumers...
+2026-02-04 15:37:10,005 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:10,005 - MonitoringAgent - INFO - 📡 CONSUMING FROM:
+2026-02-04 15:37:10,005 - MonitoringAgent - INFO -    → 'agent-metrics' topic
+2026-02-04 15:37:10,005 - MonitoringAgent - INFO -    → 'decisions' and 'feedback' topics
+2026-02-04 15:37:10,005 - MonitoringAgent - INFO - 
+2026-02-04 15:37:10,006 - MonitoringAgent - INFO - 📤 PRODUCING TO:
+2026-02-04 15:37:10,006 - MonitoringAgent - INFO -    → 'alerts' topic (to HealingAgent)
+2026-02-04 15:37:10,006 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:10,006 - MonitoringAgent - INFO - ⚠️  TEST MODE ACTIVE - Will generate synthetic spikes
+2026-02-04 15:37:10,006 - MonitoringAgent - INFO -    Spike interval: 30s
+2026-02-04 15:37:10,006 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:10,007 - MonitoringAgent - WARNING - 🚀 Launching consumer .start() threads via run_in_executor...
+2026-02-04 15:37:10,020 - MonitoringAgent - WARNING - 💓 TICK #1 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=0 | heartbeats=[]
+2026-02-04 15:37:15,674 - MonitoringAgent - WARNING - 💓 TICK #2 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=0 | heartbeats=[]
+2026-02-04 15:37:21,050 - MonitoringAgent - WARNING - 💓 TICK #3 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=0 | heartbeats=[]
+2026-02-04 15:37:26,137 - MonitoringAgent - WARNING - 💓 TICK #4 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=0 | heartbeats=[]
+2026-02-04 15:37:31,334 - MonitoringAgent - WARNING - 💓 TICK #5 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=0 | heartbeats=[]
+2026-02-04 15:37:36,655 - MonitoringAgent - WARNING - 💓 TICK #6 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=0 | heartbeats=[]
+2026-02-04 15:37:42,538 - MonitoringAgent - WARNING - 💓 TICK #7 | events_pro2026-02-04 17:56:38,631 - MonitoringAgent - INFO - Shutdown signal received...
+rtbeats=[]
+2026-02-04 15:37:42,552 - MonitoringAgent - WARNING - 🔥 GENERATING SYNTHETIC DATA DRIFT FOR TESTING
+2026-02-04 15:37:46,253 - MonitoringAgent - INFO -    ✅ No open DATA_DRIFT incident — will create new one
+2026-02-04 15:37:46,255 - MonitoringAgent - WARNING - 🚨 ALERT: Data drift detected - score 0.594 > 0.150
+2026-02-04 15:37:48,143 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:48,145 - MonitoringAgent - INFO - 📤 ALERT SENT TO HEALING AGENT
+2026-02-04 15:37:48,147 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:48,147 - MonitoringAgent - INFO - Alert Type: DATA_DRIFT
+2026-02-04 15:37:48,148 - MonitoringAgent - INFO - Severity: MEDIUM
+2026-02-04 15:37:48,148 - MonitoringAgent - INFO - Incident ID: INC-12530AC7
+2026-02-04 15:37:48,149 - MonitoringAgent - INFO - Description: Data drift detected with score 0.594
+2026-02-04 15:37:48,149 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:37:53,515 - MonitoringAgent - WARNING - 💓 TICK #8 | events_processed=0 2026-02-04 17:56:38,685 - MonitoringAgent - INFO - Shutdown signal received...
+=[]
+2026-02-04 15:37:58,967 - MonitoringAgent - WARNING - 💓 TICK #9 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=400 | heartbeats=[]
+2026-02-04 15:38:04,147 - MonitoringAgent - WARNING - 💓 TICK #10 | events_processed=0 | late2026-02-04 17:56:38,615 - MonitoringAgent - INFO - Shutdown signal received...
+26-02-04 15:38:09,233 - MonitoringAgent - WARNING - 💓 TICK #11 | events_pr2026-02-04 17:56:38,617 - MonitoringAgent - INFO - Shutdown signal received...
+heartbeats=[]
+2026-02-04 15:38:14,346 - MonitoringAgent - WARNING - 💓 TICK #12 | events_processed=0 | latency_window=0 | accuracy_window=0 | feature_distributions=400 | heartbeats=[]
+2026-02-04 15:38:14,353 - MonitoringAgent - WARNING - 🔥 GENERATING SYNTHETIC ACCURACY DROP FOR TESTING
+2026-02-04 15:38:14,559 - MonitoringAgent - INFO -    ✅ No open PERF_DROP incident — will create new one
+2026-02-04 15:38:14,560 - MonitoringAgent - WARNING - 🚨 ALERT: Model performance drop - accuracy 0.769 < 0.900
+2026-02-04 15:38:14,610 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:38:14,611 - MonitoringAgent - INFO - 📤 ALERT SENT TO HEALING AGENT
+2026-02-04 15:38:14,613 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:38:14,613 - MonitoringAgent - INFO - Alert Type: PERF_DROP
+2026-02-04 15:38:14,615 - MonitoringAgent - INFO - Severity: HIGH
+2026-02-04 15:38:14,615 - MonitoringAgent - INFO - Incident ID: INC-148A632B
+2026-02-04 15:38:14,615 - MonitoringAgent - INFO - Description: Model accuracy 0.769 below threshold 0.9
+2026-02-04 15:38:14,617 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:38:19,808 - MonitoringAgent - WARNING - 💓 TICK #13 | events_processed=0 | latency_window=0 | accuracy_window=120 | feature_distributions=400 | heartbeats=[]
+2026-02-04 15:38:25,360 - MonitoringAgent - WARNING - 💓 TICK #14 | events_processed=0 | latency_window=0 | accuracy_window=120 | feature_distributions=400 | heartbeats=[]
+2026-02-04 15:38:32,168 - MonitoringAgent - WARNING - 💓 TICK #15 | events_processed=0 | latency_window=0 | accuracy_window=120 | feature_distributions=400 | heartbeats=[]
+2026-02-04 15:38:39,942 - MonitoringAgent - WARNING - 💓 TICK #16 | events_processed=0 | latency_window=0 | accuracy_window=120 | feature_distributions=400 | heartbeats=[]
+2026-02-04 15:38:45,470 - MonitoringAgent - WARNING - 💓 TICK #17 | events_processed=0 | latency_window=0 | accuracy_window=120 | feature_distributions=400 | heartbeats=[]
+2026-02-04 15:38:45,496 - MonitoringAgent - WARNING - 🔥 GENERATING SYNTHETIC ACCURACY DROP FOR TESTING
+2026-02-04 15:38:45,747 - MonitoringAgent - INFO - Shutdown signal received...
+2026-02-04 15:38:46,690 - MonitoringAgent - INFO -    ✅ No open PERF_DROP incident — will create new one
+2026-02-04 15:38:46,695 - MonitoringAgent - WARNING - 🚨 ALERT: Model performance drop - accuracy 0.774 < 0.900
+2026-02-04 15:38:46,839 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:38:46,840 - MonitoringAgent - INFO - 📤 ALERT SENT TO HEALING AGENT
+2026-02-04 15:38:46,840 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 15:38:46,841 - MonitoringAgent - INFO - Alert Type: PERF_DROP
+2026-02-04 15:38:46,842 - MonitoringAgent - INFO - Severity: HIGH
+2026-02-04 15:38:46,842 - MonitoringAgent - INFO - Incident ID: INC-1BF7D3A9
+2026-02-04 15:38:46,843 - MonitoringAgent - INFO - Description: Model accuracy 0.774 below threshold 0.9
+2026-02-04 15:38:46,843 - MonitoringAgent - INFO - ================================================================================
+2026-02-04 17:56:38,607 - MonitoringAgent - INFO - Shutdown signal received...
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         2026-02-04 17:56:38,655 - MonitoringAgent - INFO - Shutdown signal received...
+                                                                                    2026-02-04 17:56:38,670 - MonitoringAgent - INFO - Shutdown signal received...

@@ -1,0 +1,34 @@
+2026-02-04 15:37:09,120 - ModelAgent - WARNING - ⚠ No model found in MLflow, using rule-based mode
+2026-02-04 15:37:09,123 - ModelAgent - INFO - ✓ ModelAgent initialized - ready to consume from 'features' topic
+2026-02-04 15:37:09,124 - ModelAgent - INFO - 📋 Kafka bootstrap servers: 127.0.0.1:29092
+2026-02-04 15:37:09,127 - ModelAgent - INFO - 📋 Database: postgresql://agentic_user:agentic_pass@localhost:5...
+2026-02-04 15:37:09,129 - ModelAgent - INFO - ============================================================
+2026-02-04 15:37:09,129 - ModelAgent - INFO - 🚀 ModelAgent Starting
+2026-02-04 15:37:09,130 - ModelAgent - INFO - ============================================================
+2026-02-04 15:37:09,130 - ModelAgent - INFO - 📋 Consumer configuration:
+2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Topic: 'features'
+2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Group ID: agentic-platform-v3-model-agent
+2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Bootstrap servers: 127.0.0.1:29092
+2026-02-04 15:37:09,130 - ModelAgent - INFO -   - Mode: SAFE_MODE (rules)
+2026-02-04 15:37:09,130 - ModelAgent - INFO - 
+🔄 Starting consumer in separate thread...
+2026-02-04 15:37:09,132 - ModelAgent - INFO - 🔄 Starting consumer loop...
+2026-02-04 15:37:09,158 - ModelAgent - INFO - ✓ Consumer created successfully
+2026-02-04 15:37:09,160 - ModelAgent - INFO -   → Subscribed to: {'features'}
+2026-02-04 15:37:09,161 - ModelAgent - INFO -   → Group ID: agentic-platform-v3-model-agent
+2026-02-04 15:37:09,161 - ModelAgent - INFO -   → Bootstrap servers: 127.0.0.1:29092
+2026-02-04 15:37:09,161 - ModelAgent - INFO - ⏳ Waiting for partition assignment...
+2026-02-04 15:38:45,801 - ModelAgent - INFO - Shutdown signal received...
+2026-02-04 15:38:46,200 - ModelAgent - INFO - ✓ Assigned partitions: set()
+2026-02-04 15:38:46,209 - ModelAgent - INFO - 🚀 Starting message consumption loop...
+2026-02-04 15:38:46,210 - ModelAgent - INFO - 👂 Listening for messages on 'features' topic...
+2026-02-04 15:38:46,210 - ModelAgent - INFO - 🛑 Consumer loop stopped2026-02-04 17:56:38,673 - ModelAgent - INFO - Shutdown signal received...
+2026-02-04 17:56:39,818 - ModelAgent - INFO - ✓ Assigned partitions: set()
+2026-02-04 17:56:39,823 - ModelAgent - INFO - 🚀 Starting message consumption loop...
+2026-02-04 17:56:39,830 - ModelAgent - INFO - 👂 Listening for messages on 'features' topic...
+2026-02-04 17:56:39,834 - ModelAgent - INFO - 🛑 Consumer loop stopped
+2026-02-04 17:56:39,850 - ModelAgent - INFO - ✓ Consumer closed
+Total predictions: 0
+2026-02-04 15:38:48,564 - ModelAgent - INFO -   - Last latency: 0.00ms
+2026-02-04 15:38:48,565 - ModelAgent - INFO - 
+✅ Shutdown complete
